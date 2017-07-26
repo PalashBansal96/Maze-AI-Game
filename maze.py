@@ -86,7 +86,7 @@ height = block_size * board_height
 
 red = (0xf4, 0x43, 0x36)
 white = (0xE0, 0xE0, 0xE0)
-green = (0x8B, 0xC3, 0x4A)
+green = (0x4B, 0xa3, 0x2A)
 blue = (0x1E, 0x88, 0xE5)
 
 screen = pygame.display.set_mode((width, height))
@@ -112,7 +112,7 @@ def drawMaze(maze):
 				drawRect((j,i), False, green) 
 
 def drawPlayer(position):
-	pygame.draw.circle(screen, green, (position[1]*block_size + block_size/2, position[0]*block_size + block_size/2), block_size/6, 0)
+	pygame.draw.circle(screen, green, (position[1]*block_size + block_size/2, position[0]*block_size + block_size/2), block_size/4, 0)
 
 def drawPoints(points):
 	for position in points:
