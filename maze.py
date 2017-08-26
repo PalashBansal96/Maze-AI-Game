@@ -33,45 +33,21 @@ if level == 1:
 elif level == 2: 
 	block_size = 60
 	num_points = 1
-	board_width = 5
-	board_height = 5
+	board_width = 10
+	board_height = 10
 	walls = False
 elif level == 3: 
-	block_size = 60
-	num_points = 3
-	board_width = 5
-	board_height = 5
-	walls = False
-elif level == 4: 
-	block_size = 50
-	num_points = 5
-	board_width = 7
-	board_height = 9
-	walls = False
-elif level == 5: 
-	block_size = 60
-	num_points = 1
-	board_width = 5
-	board_height = 5
-	walls = True
-elif level == 6: 
-	block_size = 50
-	num_points = 3
-	board_width = 7
-	board_height = 9
-	walls = True
-elif level == 7: 
 	block_size = 40
-	num_points = 10
+	num_points = 3
 	board_width = 15
 	board_height = 15
-	walls = True
-elif level == 8: 
-	block_size = 20
-	num_points = 45
-	board_width = 61
-	board_height = 41
-	walls = True
+	walls = False
+elif level == 4: 
+	block_size = 30
+	num_points = 5
+	board_width = 20
+	board_height = 20
+	walls = False
 else:
 	print "Invalid level"
 	exit(1)
@@ -86,11 +62,11 @@ height = block_size * board_height
 
 
 red = (0xf4, 0x03, 0x16)
-red2 = (0xf4, 0x13, 0x16)
+red2 = (0xe5, 0x73, 0x73)
 white = (0xE0, 0xE0, 0xE0)
 green = (0x4B, 0xa3, 0x2A)
-blue = (0x1E, 0x88, 0xE5)
-blue2 = (0x0E, 0x28, 0xE5)
+blue = (0x0E, 0x48, 0xE5)
+blue2 = (0x4f, 0xc3, 0xf7)
 
 screen = pygame.display.set_mode((width, height))
 
